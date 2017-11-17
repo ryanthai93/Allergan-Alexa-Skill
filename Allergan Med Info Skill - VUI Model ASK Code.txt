@@ -1,0 +1,701 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "BadMatch",
+      "samples": [
+        "hello my name is",
+        "what color is the sky",
+        "how many fingers do i have",
+        "can i put restasis in my pocket",
+        "does a telephone ring",
+        "how much does a mouse cost",
+        "my phone is black",
+        "this table is dusty",
+        "match random words",
+        "pineapple penguins cannot fly",
+        "why are you happy",
+        "what is your name",
+        "will restasis cure my cancer",
+        "does restasis taste good",
+        "does juvederm taste good",
+        "will juvederm cure my cancer",
+        "will restasis put out a fire",
+        "can i put juvederm in my gas tank",
+        "what happens if i spill my medicine",
+        "where is my dad",
+        "how is my mom",
+        "who is my sister",
+        "what is today's date",
+        "what color is restasis",
+        "why does restasis smell strange",
+        "why does juvederm float",
+        "where do i buy botox",
+        "can i use restasis on my dog",
+        "can i use restasis on my pet"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetAdverseEvents",
+      "samples": [
+        "how do i report adverse events for {AllerganMeds}",
+        "reporting adverse events for {AllerganMeds}",
+        "i want to report an adverse reaction",
+        "i want to report an adverse event",
+        "can i report an adverse event",
+        "can i report an adverse reaction"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "GetCostsSlot",
+      "samples": [
+        "what is the price of {AllerganMeds}",
+        "how much does {AllerganMeds} cost"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetDosageSlot",
+      "samples": [
+        "how much {AllerganMeds} should I use",
+        "what is the correct dosage for {AllerganMeds}",
+        "what is the dose for {AllerganMeds}",
+        "how many {AllerganMeds}",
+        "how do i use {AllerganMeds}"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetDrugInteractions",
+      "samples": [
+        "can i use {AllerganMeds} with {AllerganMeds}",
+        "tell me about {AllerganMeds} interactions",
+        "{AllerganMeds} drug interactions"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "GetHowItWorksSlot",
+      "samples": [
+        "how does {AllerganMeds} work"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetIngredientsSlot",
+      "samples": [
+        "what are the ingredients of {AllerganMeds}",
+        "what is {AllerganMeds} made of",
+        "what does {AllerganMeds} consist of",
+        "what is in {AllerganMeds}"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetJuvedermExperience",
+      "samples": [
+        "what is the juvederm treatment experience like",
+        "what is the juvederm treatment like",
+        "what is getting juvederm like",
+        "how juvederm applied"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermPain",
+      "samples": [
+        "does juvederm injection hurt",
+        "does getting juvederm hurt",
+        "is getting juvederm painful",
+        "is juvederm injection painful",
+        "is there pain when using juvederm"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermReasonsNot",
+      "samples": [
+        "are there any reasons i should not receive juvederm",
+        "what are the reasons i should not receive juvederm",
+        "what are the reasons i should not get juvederm injected"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermResultsLast",
+      "samples": [
+        "how long do juvederm results last",
+        "when will juvederm results wear off",
+        "how long does juvederm last"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermSaveMoney",
+      "samples": [
+        "how can i save on juvederm treatment",
+        "how do i save money on juvederm treatment",
+        "how can i get a discount on juvederm"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermSeeResults",
+      "samples": [
+        "when will I see juvederm results",
+        "how long does it take to see the results of juvederm"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetJuvedermWhereUsed",
+      "samples": [
+        "where is juvederm used",
+        "where is juvederm injected",
+        "where can i use juvederm",
+        "where is juvederm for"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRandomFactSlot",
+      "samples": [
+        "tell me about {AllerganMeds}",
+        "can you tell me about {AllerganMeds}"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetRestasisCapOff",
+      "samples": [
+        "how do i take the cap off the restasis multidose bottle",
+        "how do i take the cap off the restasis bottle",
+        "how do i get the cap off the restasis",
+        "cap off restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisCataract",
+      "samples": [
+        "will restasis work if i have had cataract surgery",
+        "i had cataract surgery will restasis work for me",
+        "does restasis work after cataract surgery"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisContactsInfo",
+      "samples": [
+        "if i wear contact lenses can i use restasis",
+        "can i use restasis with contacts",
+        "is it okay to use restasis with contact lenses",
+        "is it okay to use restasis with contacts",
+        "i wear contacts is restasis okay",
+        "use restasis contact lenses",
+        "use restasis contacts"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisDiff",
+      "samples": [
+        "what is the difference with restasis multidose",
+        "is there a difference between restasis and restasis multidose",
+        "how is restasis multidose different from restasis",
+        "differences between restasis and restasis multidose",
+        "restasis and restasis multidose differences"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisDuctPlugs",
+      "samples": [
+        "can i use restasis or restasis multidose if i have tear duct plugs",
+        "does restasis work if i have tear duct plugs",
+        "can i use restasis if i have tear duct plugs",
+        "i have tear duct plugs will restasis work",
+        "will restasis work if i have tear duct plugs"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisExpiredInfo",
+      "samples": [
+        "can i use restasis or restasis multidose if it is beyond its shelf life or past the expiration date",
+        "can i use expired restasis",
+        "my restasis is expired can i still use it",
+        "restasis past its expiration date ",
+        "restasis beyond its shelf life"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisGetMultidose",
+      "samples": [
+        "how can i get restasis multidose",
+        "how do i get restasis multidose",
+        "i have restasis i want multidose",
+        "i have restasis vials but i want restasis multidose",
+        "i have restasis how do i get multidose",
+        "i have restasis i want restasis multidose"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisGlutenFree",
+      "samples": [
+        "are restasis and restasis multidose gluten free",
+        "is restasis gluten free",
+        "does restasis have gluten in it",
+        "is there gluten in restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisHowLong",
+      "samples": [
+        "how long can i use restasis for",
+        "how long will i have to use restasis",
+        "when will restasis cure my dry eyes",
+        "how long do i use restasis",
+        "how long does restasis take"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisIfStop",
+      "samples": [
+        "what happens if i stop using restasis",
+        "what happens if i stop taking restasis",
+        "what will happen if i just stop taking restasis",
+        "will anything happen if i stop using restasis",
+        "what will happen if i just stop using restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisNinetyDay",
+      "samples": [
+        "is restasis multidose available as a ninety day prescription",
+        "can i get a ninety day prescription for restasis multidose"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisPrescriber",
+      "samples": [
+        "who can prescribe restasis",
+        "can my doctor prescribe restasis",
+        "can my eye doctor prescribe restasis",
+        "how do i get restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisRecycle",
+      "samples": [
+        "restasis recycle",
+        "restasis recycleable"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisSwitch",
+      "samples": [
+        "why should i switch from restasis to restasis multidose",
+        "is there a reason to switch from restasis to restasis multidose"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisTearDiff",
+      "samples": [
+        "how is restasis different from artificial tears",
+        "is restasis the same as artificial tears",
+        "is restasis better than artificial tears",
+        "are artificial tears better than restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisUseWithTears",
+      "samples": [
+        "can i use restasis with artificial tears",
+        "can restasis be used with artificial tears",
+        "can i use restasis and artificial tears together",
+        "is it safe to use restasis with artifical tears"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetRestasisVialUse",
+      "samples": [
+        "why should i throw away a vial after i have used it if there is still solution left in the vial",
+        "can i save the restasis vial if there is still solution left",
+        "do i have to throw away the restasis vial if there is some left over",
+        "can i save my restasis vial if i did not use it all",
+        "if i save it in the refrigerator can i use restasis for more than one dose",
+        "restasis refridgerator ",
+        "can i put restasis in the refridgerator",
+        "can i put restasis in the fridge",
+        "can i save restasis"
+      ],
+      "slots": []
+    },
+    {
+      "name": "GetSideEffectSlot",
+      "samples": [
+        "what are the side effects of {AllerganMeds}",
+        "does {AllerganMeds} have any side effects",
+        "tell me about {AllerganMeds} side effects",
+        "tell me about the side effects of {AllerganMeds}",
+        "{AllerganMeds} side effect"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "GetWhatIsSlot",
+      "samples": [
+        "what is {AllerganMeds}",
+        "what does {AllerganMeds} do"
+      ],
+      "slots": [
+        {
+          "name": "AllerganMeds",
+          "type": "AllerganMeds",
+          "samples": [
+            "{AllerganMeds}"
+          ]
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "AllerganMeds",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "restasis",
+            "synonyms": [
+              "multidose",
+              "stasis"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "juvederm",
+            "synonyms": [
+              "jupiter"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "botox",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "skin medica",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "natrelle",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "latisse",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-GetCostsSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetDosageSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetHowItWorksSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetIngredientsSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetRandomFactSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "what product are you asking me about"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetSideEffectSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "which treatment, drug, or medicine are you refferring to"
+        },
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    },
+    {
+      "id": "Elicit.Intent-GetWhatIsSlot.IntentSlot-AllerganMeds",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "are you asking about botox, juvederm, latisse, natrelle, skinmedica, or restasis"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "GetCostsSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetCostsSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetDosageSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetDosageSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetHowItWorksSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetHowItWorksSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetIngredientsSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetIngredientsSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetRandomFactSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetRandomFactSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetSideEffectSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetSideEffectSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      },
+      {
+        "name": "GetWhatIsSlot",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "AllerganMeds",
+            "type": "AllerganMeds",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-GetWhatIsSlot.IntentSlot-AllerganMeds"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
